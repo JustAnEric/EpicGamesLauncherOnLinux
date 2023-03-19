@@ -1,0 +1,10 @@
+#!/bin/sh
+#This program will install the Epic Games on your Linux device.
+
+sudo apt install wine wine32 wine64 python pip python-tk -y -q
+mkdir -p ~/.cache/epicgames
+touch ~/.cache/epicgames/bnk.bnk;
+pip install flask requests pywebview[qt] pyqt5 -y -q
+echo "We have installed all dependencies. Please wait while we open your control panel..."
+python ./panel.py
+echo "The installation is now complete."
