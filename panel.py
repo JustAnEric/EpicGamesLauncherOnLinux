@@ -1,4 +1,4 @@
-import tkinter, pywebview
+import tkinter, webview
 from tkinter import Tk
 
 window = Tk()
