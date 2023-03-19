@@ -1,11 +1,11 @@
 import tkinter, webview
-from tkinter import Tk, ttk
+from tkinter import Tk, ttk, messagebox
 
 window = Tk()
 window.overrideredirect(True)
 
 def close():
-  res = tkinter.messagebox.askyesno("Are you sure?", "Are you sure you want to close the application or process? This may affect the quality of your EpicGames installation.")
+  res = messagebox.askyesno("Are you sure?", "Are you sure you want to close the application or process? This may affect the quality of your EpicGames installation.")
   if res: window.overrideredirect(False)
   else: pass
 
