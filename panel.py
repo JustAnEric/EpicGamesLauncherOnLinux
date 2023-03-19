@@ -12,7 +12,7 @@ def close():
 label = tkinter.Label(window, text="Please wait while we edit the configuration in ./home/user/.cache/epicgames/make.properties").grid(column=0, row=0)
 btn = tkinter.Button(window, text="Cancel", command=close).grid(column=0, row=1)
 
-bar = Progressbar(window, length=200).grid(column=0, row=2)
+bar = tkinter.Progressbar(window, length=200).grid(column=0, row=2)
 bar['value'] = 70
 
 window.mainloop()
