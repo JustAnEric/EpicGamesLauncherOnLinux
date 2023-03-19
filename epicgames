@@ -6,7 +6,7 @@ sudo dpkg --add-architecture i386
 sudo apt install -q wine python pip python-tk -y
 mkdir -p ~/.cache/epicgames
 touch ~/.cache/epicgames/bnk.bnk;
-pip install flask requests pywebview[qt] pyqt5 -y -q
+pip install flask requests pywebview[qt] pyqt5
 echo "We have installed all dependencies. Please wait while we open your control panel..."
 python ./panel.py
 echo "The installation is now complete."
