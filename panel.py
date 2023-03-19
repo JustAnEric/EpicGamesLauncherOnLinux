@@ -1,4 +1,4 @@
-import tkinter, webview
+import tkinter, webview, time
 from tkinter import Tk, ttk, messagebox
 
 window = Tk()
@@ -6,7 +6,7 @@ window.overrideredirect(True)
 
 def close():
   res = messagebox.askyesno("Are you sure?", "Are you sure you want to close the application or process? This may affect the quality of your EpicGames installation.")
-  if res: window.overrideredirect(False)
+  if res: label.configure(text="Closing down..."); time.sleep(3); window.close()
   else: pass
 
 label = tkinter.Label(window, text="Please wait while we edit the configuration in ./home/user/.cache/epicgames/make.properties").grid(column=0, row=0)
