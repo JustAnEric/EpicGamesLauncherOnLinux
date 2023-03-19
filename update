@@ -9,4 +9,5 @@ rm -r $var; # removes the directory
 echo "Re-installing..."
 git clone --quiet https://github.com/JustAnEric/EpicGamesLauncherOnLinux.git # reinstall
 echo "Installed newest version.";
+cd EpicGamesLauncherOnLinux
 rm ./update #removes the update file.
